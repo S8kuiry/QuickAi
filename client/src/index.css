@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+:root {
+  --color-primary: rgb(80 68 229); /* or #5044e5 */
+  --test:rgb(0, 162, 255);
+}
+
+
+*{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+::-webkit-scrollbar{
+    display: none;
+    
+}
+.reset-tw,.reset-tw *{
+  all:revert !important;
+}
+.cl-drawerRoot{
+  z-index: 30;
+}
+
+@keyframes bounceDot {
+  0%, 80%, 100% {
+    transform: scale(0);
+    opacity: 0.4;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.bounce-dot {
+  animation: bounceDot 1s infinite ease-in-out;
+}
